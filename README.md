@@ -11,7 +11,7 @@ My mother is not technology savvy by any means. She is just a chef who wants to 
   ![License Badge](https://img.shields.io/badge/license-GNU%20GPLv3-orange?style=plastic=appveyor?raw=true)
   <br>
   
-  [Click here for more information regarding the above license](https://opensource.org/licenses/MIT](https://opensource.org/licenses/GPL-3.0)
+  [Click here for more information regarding the above license](https://opensource.org/licenses/MIT](https://opensource.org/licenses/GPL-3.0) 
     
   ---
     

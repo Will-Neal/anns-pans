@@ -59,6 +59,7 @@ main {
 
 .left-column {  
     flex: 25%;
+    padding:30px;
 }
 
 

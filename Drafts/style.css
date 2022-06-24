@@ -62,7 +62,15 @@ main {
     padding:30px;
 }
 
-
 .right-column {
     flex: 75%;
+    padding: 30px;
+}
+
+.search-bar {
+    height: 50px;
+    background-color: #f4f2ef;
+    width: 65%;
+    border: 1px solid #0d0b08;
+    border-radius: 45px;
 }

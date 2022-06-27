@@ -6,6 +6,7 @@
    --rust: #c35d13;
    --cream: #D3Ae5C;
    --light-white-background: #f4f2ef;
+   --bubble-border: grey;
 }
 
 * {
@@ -69,6 +70,8 @@ main {
     text-align: center;
     height: fit-content;
     padding: 30px;
+    border: 2px solid var(--bubble-border);
+    box-shadow: 0px 10px 5px var(--beige);
 }
 
 .right-column {
@@ -80,9 +83,9 @@ main {
     height: 50px;
     background-color: var(--light-white-background);
     width: 65%;
-    border: 2px solid #0d0b08;
+    border: 2px solid var(--bubble-border);
     border-radius: 45px;
-
+    box-shadow: 0px 10px 5px var(--beige);
 }
 
 .search-image {

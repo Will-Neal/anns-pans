@@ -5,6 +5,7 @@
    --black: #0d0b08;
    --rust: #c35d13;
    --cream: #D3Ae5C;
+   --light-white-background: #f4f2ef;
 }
 
 * {
@@ -62,6 +63,14 @@ main {
     padding:30px;
 }
 
+.recipe-container {
+    background-color: var(--light-white-background);
+    border-radius: 45px;
+    text-align: center;
+    height: fit-content;
+    padding: 30px;
+}
+
 .right-column {
     flex: 75%;
     padding: 30px;
@@ -69,9 +78,9 @@ main {
 
 .search-bar {
     height: 50px;
-    background-color: #f4f2ef;
+    background-color: var(--light-white-background);
     width: 65%;
-    border: 1px solid #0d0b08;
+    border: 2px solid #0d0b08;
     border-radius: 45px;
 
 }

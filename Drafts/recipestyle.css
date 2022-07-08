@@ -30,7 +30,7 @@
 }
 
 .recipe-main {
-    background-color: #CAB59b;
+    background-color: var(--grey);
     height: 80vh;
     width: 100%;
 }

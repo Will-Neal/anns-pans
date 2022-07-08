@@ -1,0 +1,36 @@
+:root {
+    --orange: #fd8207;
+    --grey: #eceae7;
+    --beige: #CAB59b;
+    --black: #0d0b08;
+    --rust: #c35d13;
+    --cream: #D3Ae5C;
+    --light-white-background: #f4f2ef;
+    --bubble-border: grey;
+ }
+
+* {
+    margin: 0px;
+    padding: 0px;
+    border: 0px;
+    background-color: var(--rust);
+}
+
+.recipe-header {
+    height: 200px;
+    background-color: var(--rust);
+    text-align: center;
+}
+
+.recipe-name {
+    padding: 75px;
+    color: #D3Ae5C;
+    font-size: 300%;
+    font-family: 'Fascinate', cursive;
+}
+
+.recipe-main {
+    background-color: #CAB59b;
+    height: 80vh;
+    width: 100%;
+}

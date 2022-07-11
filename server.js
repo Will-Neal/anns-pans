@@ -33,4 +33,8 @@ app.get('/admin', (req, res) => {
     res.render('admin')
 })
 
+app.get('/recipe', (req, res) => {
+    res.render('recipe')
+})
+
 app.listen(PORT, () => console.log(`Now listening on http://localhost:${PORT}`))

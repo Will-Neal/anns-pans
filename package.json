@@ -1,0 +1,23 @@
+{
+  "name": "anns-pans",
+  "version": "1.0.0",
+  "description": "## Description A recipe website designed for ease of use, by my mother - a chef who has always wanted to write a cookbook but never had the time. While still in its infancy, the ultimate goal is to build the site in Django due to it's prebuilt integrated admin page in conjunction with the fact that the pages needs are fairly mundane. As such, the time saved by using the Django admin page offsets any time gained making the page dynamic in a framework like React and an admin page is a necessity since the primary user has no knowledge of HTML or web development in general.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Will-Neal/anns-pans.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Will-Neal/anns-pans/issues"
+  },
+  "homepage": "https://github.com/Will-Neal/anns-pans#readme",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}

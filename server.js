@@ -29,4 +29,8 @@ app.get('/', (req, res) => {
     res.render('home')
 })
 
+app.get('/admin', (req, res) => {
+    res.render('admin')
+})
+
 app.listen(PORT, () => console.log(`Now listening on http://localhost:${PORT}`))

@@ -26,7 +26,7 @@ app.set('view engine', 'handlebars');
 
 //Routes
 app.get('/', (req, res) => {
-    res.send('<h1>HELLO, WORLD! WELCOME TO THE HOMEPAGE</h1>')
+    res.render('home')
 })
 
 app.listen(PORT, () => console.log(`Now listening on http://localhost:${PORT}`))

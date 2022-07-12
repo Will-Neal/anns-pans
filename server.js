@@ -48,7 +48,15 @@ app.get('/admin', (req, res) => {
     res.render('admin')
 })
 
-app.route('/recipe').get((req, res) => {
+app.route('/recipe').get(async (req, res) => {
+    const recipes = await db.collection('recipe').find({}).toArray()
+    console.log(recipes)
+    for (const recipe of recipes) {
+        console.log(recipe.title)
+        console.log(recipe.style)
+        console.log(recipe.ingredients)
+        console.log(recipe.steps)
+    }
     res.render('recipe')
 }).post((req, res) => {
     db.collection('recipe').insertOne(req.body)

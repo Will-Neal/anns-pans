@@ -20,10 +20,8 @@ mongodb.connect(
     connectionStringURI,
     { useNewUrlParser: true, useUnifiedTopology: true },
     (err, client) => {
+        if (err) throw err
         db = client.db();
-        app.listen(PORT, () => {
-            console.log(`Example app listening at http://localhost:${PORT}`)
-        })
     }
 )
 
@@ -57,4 +55,4 @@ app.route('/recipe').get((req, res) => {
     res.status(200).json('database hit')
 })
 
-// app.listen(PORT, () => console.log(`Now listening on http://localhost:${PORT}`))
+app.listen(PORT, () => console.log(`Now listening on http://localhost:${PORT}`))

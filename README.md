@@ -22,7 +22,7 @@ My mother is not technology savvy by any means. She is just a chef who wants to 
   - Handlebars
   - JS
   - Express-Sessions
-  - 
+  
 
   ## How to Contribute
 

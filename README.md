@@ -17,8 +17,12 @@ My mother is not technology savvy by any means. She is just a chef who wants to 
     
   ## Technologies
 
-  - Python 3
-  - Django
+  - Express
+  - Node
+  - Handlebars
+  - JS
+  - Express-Sessions
+  - 
 
   ## How to Contribute
 

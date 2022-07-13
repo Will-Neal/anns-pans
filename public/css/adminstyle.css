@@ -1,4 +1,9 @@
 .input-form-container {
     height: fit-content;
-    
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-input {
+    border: 1px solid black;
 }

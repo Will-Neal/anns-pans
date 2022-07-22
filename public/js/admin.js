@@ -1,7 +1,9 @@
-//Button to add another ingredient
+//Button to add another ingredient and step
 const addButton = document.querySelector("#add-button")
-//grab ingredient input field div 
+const stepButton = document.querySelector("#step-button")
+//grab ingredient input field div and step input field div
 const ingredientInput = document.querySelector("#ingredient-inputs")
+const stepInput = document.querySelector("#step-inputs")
 
 let ingredientNum = 1
 const addIngredient = () => {
@@ -13,7 +15,7 @@ const addIngredient = () => {
     pairDiv.setAttribute("class", "ingredient-quantity-pair")
     label.textContent = `Ingredent ${ingredientNum}`
     input.setAttribute("type", "text")
-    input.setAttribute("name", "ingredient")
+    input.setAttribute("name", "ingredients")
     input.setAttribute("placeholder", `Ingredient ${ingredientNum}`)
     //Create quantity label and input
     const quantityLabel = document.createElement('label')
@@ -30,5 +32,20 @@ const addIngredient = () => {
     pairDiv.appendChild(quantityInput)
 }
 
+let stepNum = 1
+const addStep = () => {
+    stepNum += 1;
+    const label = document.createElement('label')
+    const textArea = document.createElement('textarea')
+    label.textContent = `Step ${stepNum}`
+    textArea.setAttribute("rows", "2")
+    textArea.setAttribute("type", "text")
+    textArea.setAttribute("name", "steps")
+    textArea.setAttribute("placeholder", `Step ${stepNum}`)
+    stepInput.appendChild(label);
+    stepInput.appendChild(textArea);
+}
+
 
 addButton.addEventListener('click', addIngredient)
+stepButton.addEventListener('click', addStep)

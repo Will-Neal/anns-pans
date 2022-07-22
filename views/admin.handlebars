@@ -26,17 +26,19 @@
     <form action="/recipe" method="post" class="admin-form ui form">
         <div class="field">
             <label>Title</label>
-            <input type="text" name="first-name" placeholder="Recipe Name">
+            <input type="text" name="title" placeholder="Recipe Name">
         </div>
         <div class="field">
             <label>Style</label>
-            <input type="text" name="last-name" placeholder="Last Name">
+            <input type="text" name="style" placeholder="Style">
         </div>
         <h4>Ingredients</h4>
         <div class="ui button" id="add-button">+</i></div>
-        <div class="field" id="ingredient-inputs">
-            <label>Style</label>
-            <input type="text" name="last-name" placeholder="Last Name">
+        <div class="field ingredient-inputs" id="ingredient-inputs">
+            <label>Ingredient 1</label>
+            <input type="text" name="ingredient" placeholder="Ingredient">
+            <label>Quantity</label>
+            <input type="text" name="quantity" placeholder="Quantity">
         </div>
         <button class="ui button admin-button" type="submit">Submit</button>
     </form>

@@ -33,14 +33,17 @@
             <input type="text" name="style" placeholder="Style">
         </div>
         <h4>Ingredients</h4>
-        <div class="ui button" id="add-button">+</i></div>
+        <div class="ui button add-button" id="add-button">+</i></div>
         <div class="field ingredient-inputs" id="ingredient-inputs">
-            <label>Ingredient 1</label>
-            <input type="text" name="ingredient" placeholder="Ingredient">
-            <label>Quantity</label>
-            <input type="text" name="quantity" placeholder="Quantity">
+            <div class='ingredient-quantity-pair'>
+                <label>Ingredient 1</label>
+                <input type="text" name="ingredient" placeholder="Ingredient">
+                <label>Quantity</label>
+                <input type="text" name="quantity" placeholder="Quantity">
+            </div>
+
         </div>
         <button class="ui button admin-button" type="submit">Submit</button>
     </form>
-<script src="js/admin.js"></script>
+    <script src="js/admin.js"></script>
 </div>

@@ -7,8 +7,10 @@ let ingredientNum = 1
 const addIngredient = () => {
     ingredientNum += 1
     //Create ingredient label and input
+    const pairDiv = document.createElement('div')
     const label = document.createElement('label') 
     const input = document.createElement('input')
+    pairDiv.setAttribute("class", "ingredient-quantity-pair")
     label.textContent = `Ingredent ${ingredientNum}`
     input.setAttribute("type", "text")
     input.setAttribute("name", "ingredient")
@@ -21,10 +23,11 @@ const addIngredient = () => {
     quantityInput.setAttribute("name", "quantity")
     quantityInput.setAttribute("placeholder", `Quantity`)
     //Append Ingredient and Quantity to ingredient-input div
-    ingredientInput.appendChild(label)
-    ingredientInput.appendChild(input)
-    ingredientInput.appendChild(quantityLabel)
-    ingredientInput.appendChild(quantityInput)
+    ingredientInput.appendChild(pairDiv)
+    pairDiv.appendChild(label)
+    pairDiv.appendChild(input)
+    pairDiv.appendChild(quantityLabel)
+    pairDiv.appendChild(quantityInput)
 }
 
 

@@ -24,4 +24,10 @@
     margin-right: auto;
 }
 
-.ingredient-inputs
+.ingredient-inputs {
+    margin-top: 30px !important;
+}
+
+.ingredient-quantity-pair {
+    margin-bottom: 25px;
+}

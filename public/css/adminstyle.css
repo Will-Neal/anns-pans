@@ -1,9 +1,25 @@
-.input-form-container {
+.admin-form-container {
+    margin-top: 30px  !important;
     height: fit-content;
     display: flex;
     flex-direction: column;
+    width: 800px;
+    margin: auto;
+    padding: 30px;
+
 }
+
+/* label {
+    text-align: center;
+} */
+
+
 
 .recipe-input {
     border: 1px solid black;
+}
+
+.admin-button {
+    margin-left: auto;
+    margin-right: auto;
 }

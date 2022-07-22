@@ -10,8 +10,8 @@
     </header>
     <main>
 </div>
-<div class="input-form-container">
-    <form action="/recipe" method="post" class="input-form">
+<div class="admin-form-container">
+    {{!-- <form action="/recipe" method="post" class="input-form">
         <input class="recipe-input" type="text" name="title" placeholder="title">
         <input class="recipe-input" type="text" name="style" placeholder="style">
         <input class="recipe-input" type="text" name="time" placeholder="time">
@@ -22,5 +22,16 @@
         <input class="recipe-input" type="text" name="step-one">
         <input class="recipe-input" type="text" name="step-two">
         <input class="recipe-input" type="text" name="step-three">
+    </form> --}}
+    <form action="/recipe" method="post" class="admin-form ui form">
+        <div class="field">
+            <label>Title</label>
+            <input type="text" name="first-name" placeholder="Recipe Name">
+        </div>
+        <div class="field">
+            <label>Style</label>
+            <input type="text" name="last-name" placeholder="Last Name">
+        </div>
+        <button class="ui button admin-button" type="submit">Submit</button>
     </form>
 </div>

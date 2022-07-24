@@ -18,6 +18,10 @@
     font-family: 'Fascinate', cursive !important;
 }
 
+body {
+    background-color: var(--grey);
+}
+
 .main-container {
     /* height: 100vh; */
     /* width: 100vw; */
@@ -170,4 +174,9 @@ input[type=text] {
 .mom-photo {
     width: 100%;
     border-radius: 45px;
-    }
+}
+
+.info-text {
+    padding: 30px;
+    border-radius: 45%;
+}

@@ -8,6 +8,7 @@ const app = express();
 
 //handlebars
 const exphbs = require('express-handlebars');
+const { ObjectID } = require('bson');
 const hbs = exphbs.create({})
 //Project imports
 
@@ -38,14 +39,24 @@ app.set('view engine', 'handlebars');
 
 //Routes
 app.get('/', async (req, res) => {
-    const recipes = await db.collection('recipe').find({})
-    const recipeArray = await recipes.toArray()
-    console.log(recipeArray)
-    res.render('home', recipeArray)
+    const recipeObject = await db.collection('recipe').find({})
+    const recipes = await recipeObject.toArray()
+    //const recipes = recipeArray.map((recipe) => recipe.get({ plain: true }))
+
+
+    // console.log(recipes)
+
+    res.render('home', {recipes})
 })
 
 app.get('/admin', (req, res) => {
     res.render('admin')
+})
+
+app.get('/recipe/:id', async (req, res) => {
+    const recipe = await db.collection('recipe').findOne({ _id: new ObjectID(req.params.id)})
+    console.log(recipe)
+    res.render('recipe', {recipe})
 })
 
 app.route('/recipe').get(async (req, res) => {
@@ -62,5 +73,7 @@ app.route('/recipe').get(async (req, res) => {
     db.collection('recipe').insertOne(req.body)
     res.status(200).json('database hit')
 })
+
+
 
 app.listen(PORT, () => console.log(`Now listening on http://localhost:${PORT}`))

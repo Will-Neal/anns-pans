@@ -15,8 +15,9 @@
                 <div class="left-column">
                     <div class="recipe-container">
                         <h2>Recipes</h2>
-                        <h3><a href="/recipe">test</a></h3>
-                        <h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3><h3>test</h3>
+                        {{#each recipes as |recipe|}}
+                        <h3><a href="/recipe/{{recipe._id}}">{{recipe.title}}</a></h3>
+                        {{/each}}
                     </div>
                 </div>
                 <!-- Center-column -->

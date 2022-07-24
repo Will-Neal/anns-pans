@@ -37,8 +37,11 @@ app.engine('handlebars', hbs.engine);
 app.set('view engine', 'handlebars');
 
 //Routes
-app.get('/', (req, res) => {
-    res.render('home')
+app.get('/', async (req, res) => {
+    const recipes = await db.collection('recipe').find({})
+    const recipeArray = await recipes.toArray()
+    console.log(recipeArray)
+    res.render('home', recipeArray)
 })
 
 app.get('/admin', (req, res) => {

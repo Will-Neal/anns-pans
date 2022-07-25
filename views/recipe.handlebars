@@ -38,9 +38,15 @@
 }
 
 .recipe-name {
-    padding: 75px;
+    padding-top: 75px;
     color: var(--cream);
     font-size: 300%;
+    font-family: 'Fascinate', cursive;
+    padding-bottom: 10px;
+}
+
+h4 {
+    color: var(--cream);
     font-family: 'Fascinate', cursive;
 }
 
@@ -65,7 +71,12 @@
     margin-bottom: var(--cream) 1px solid;
 }
 
-
+.ingredients-list {
+    margin-left:auto;
+    margin-right: auto;
+    width: 80%;
+    text-align: center;
+}
 
 
 
@@ -78,17 +89,17 @@
 
 <header class="recipe-header">
     <h1 class="recipe-name">{{recipe.title}}</h1>
+    <h4 class="'recipe-style">{{recipe.style}}</h4>
 </header>
 
 
 <main class="recipe-main">
 <div class="line"></div>
 <div class="ingredients-container">
-    <div class="ingredients-left">
-
-    </div>
-    <div class="ingredients-right">
+    <div class="ingredients-list">
+        <h4 class="ingredients-header"> What You Need</h4>
         
+        <p class="ingredient-item"> {{recipe.ingredient}}</p>
     </div>
 </div>
 <div class="line"></div>

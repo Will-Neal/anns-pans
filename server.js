@@ -55,13 +55,13 @@ app.get('/admin', (req, res) => {
 
 app.get('/recipe/:id', async (req, res) => {
     const recipe = await db.collection('recipe').findOne({ _id: new ObjectID(req.params.id)})
-    console.log(recipe)
+    // console.log(recipe)
     res.render('recipe', {recipe})
 })
 
 app.route('/recipe').get(async (req, res) => {
     const recipes = await db.collection('recipe').find({}).toArray()
-    console.log(recipes)
+    // console.log(recipes)
     for (const recipe of recipes) {
         console.log(recipe.title)
         console.log(recipe.style)

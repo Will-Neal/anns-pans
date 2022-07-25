@@ -14,32 +14,82 @@
     margin: 0px;
     padding: 0px;
     border: 0px;
-    background-color: var(--grey);
+}
+
+.recipe-nav {
+    width: 100vw;
+    height: 65px;
+    background-color: #c35d13 !important;
+    font-family: 'Fascinate', cursive;
+    color: var(--cream);
+    box-shadow: 0px 8px 5px var(--beige);
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--cream);
+    padding-left: 20px;
 }
 
 .recipe-header {
     height: 200px;
-    background-color: var(--rust);
+    {{!-- background-color: var(--rust); --}}
     text-align: center;
 }
 
 .recipe-name {
     padding: 75px;
-    color: #D3Ae5C;
+    color: var(--cream);
     font-size: 300%;
     font-family: 'Fascinate', cursive;
 }
 
 .recipe-main {
-    background-color: var(--grey);
     height: 80vh;
     width: 100%;
+    
 }
+
+.line {
+    margin: auto;
+    height: 1px;
+    width: 80%;
+    border-top: var(--cream) 1px solid;
+}
+
+.ingredients-container {
+    margin: auto;
+    height: 250px;
+    width: 80%;
+    display: flex;
+    margin-bottom: var(--cream) 1px solid;
+}
+
+
+
+
+
 </style>
+
+<div class="recipe-nav">
+    <a class="nav-link" href="/">Home</a>
+    <a class="nav-link" href="/admin">admin</a>
+</div>
 
 <header class="recipe-header">
     <h1 class="recipe-name">{{recipe.title}}</h1>
 </header>
-<main class="recipe-main">
 
+
+<main class="recipe-main">
+<div class="line"></div>
+<div class="ingredients-container">
+    <div class="ingredients-left">
+
+    </div>
+    <div class="ingredients-right">
+        
+    </div>
+</div>
+<div class="line"></div>
 </main>

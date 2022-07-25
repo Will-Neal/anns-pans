@@ -102,8 +102,8 @@ h4 {
 <div class="ingredients-container">
     <div class="ingredients-list">
         <h4 class="ingredients-header"> What You Need</h4>
-        {{#each ingredients as |ingredient|}}
-            <p class="ingredient-item">{{ingredient}}</p>
+        {{#each ingredientsArray as |ingredient|}}
+            <p class="ingredient-item">{{ingredient.[1]}}{{ingredient.[0]}}</p>
         {{/each}}
     </div>
 </div>

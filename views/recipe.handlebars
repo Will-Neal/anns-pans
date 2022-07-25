@@ -102,11 +102,9 @@ h4 {
 <div class="ingredients-container">
     <div class="ingredients-list">
         <h4 class="ingredients-header"> What You Need</h4>
-        
-        <p class="ingredient-item"> Test</p>
-        <p class="ingredient-item"> Test</p>
-        <p class="ingredient-item"> Test</p>
-        <p class="ingredient-item"> Test</p>
+        {{#each ingredients as |ingredient|}}
+            <p class="ingredient-item">{{ingredient}}</p>
+        {{/each}}
     </div>
 </div>
 <div class="line"></div>
